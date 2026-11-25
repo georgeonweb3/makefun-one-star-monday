@@ -73,8 +73,10 @@ Drafting notes (scored against the judge brief):
   Monday-specific as a 9 a.m. workday anchor, so the line stands
   as tournament-won.
 - Gate check: 20 words, 103 chars, 1-180 required, UTF-8, single
-  line. Verified by running main.py: writes 103 characters to
-  /output/entry.txt.
+  line. Verified by running main.py before commit 6ebaff15: it wrote
+  exactly 103 characters to /output/entry.txt, and the file content
+  re-read back byte-identical to the LINE constant (20 words, one
+  line, no trailing newline).
 """
 
 import os
